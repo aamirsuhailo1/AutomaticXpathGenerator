@@ -1,3 +1,5 @@
+![AXG_sc2](https://user-images.githubusercontent.com/8610673/121768029-91a62c00-cb79-11eb-96eb-4ac4c843b74b.png)
+
 ## Problem Statement:
 As an automation test engineer, while writing automated test cases we need xpaths. As of now, most of us are writing the xpaths manually in either in chrome dev tools or using other extensions like selectorshub.
 Assume that a page has some 200 elements to be used for automation. to write the xpath for each and every element is time consuming and it takes lot of efforts. 
