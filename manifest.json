@@ -1,6 +1,6 @@
 {
     "name" : "AutomaticXpathGenerator",
-    "version" : "0.1",
+    "version" : "1.0",
     "description" : "This will generate xpaths for elements on the webpage",
     "manifest_version" : 2,
     "content_scripts" : [
