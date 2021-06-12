@@ -2,6 +2,13 @@
     "name" : "AutomaticXpathGenerator",
     "version" : "1.0",
     "description" : "This will generate xpaths for elements on the webpage",
+    "icons" : {
+        "128" :"128_g.png",
+        "48" : "48_g.png",
+        "32" : "32_g.png",
+        "16" : "16_g.png"
+       
+    },
     "manifest_version" : 2,
     "content_scripts" : [
         {
@@ -12,6 +19,6 @@
     "permissions": ["storage", "activeTab"],
     "browser_action" : {
         "default_popup" : "demo.html",
-        "default_icon" : "logo.png"
+        "default_icon" : "128_g.png"
     }
 }
