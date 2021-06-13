@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener(
 
 function start() {
   
-    var allElements = ["input","select","textarea"];
+    var allElements = ["input","select","textarea","button","a"];
 
     for (j = 0; j < allElements.length; j++) {
         var tagnam = allElements[j];
@@ -48,12 +48,19 @@ function start() {
                 fetchXpaths(tagnam, elements[k]);
             }
         }
-        /*else if (tagnam == "button") {
+        else if (tagnam == "button") {
             console.log("inside button");
             for (l = 0; l < len; l++) {
                 fetchXpaths(tagnam, elements[l]);
             }
-        }*/
+        }
+
+        else if (tagnam == "a") {
+            console.log("inside link");
+            for (l = 0; l < len; l++) {
+                fetchXpaths(tagnam, elements[l]);
+            }
+        }
     }
 }
     
@@ -75,9 +82,11 @@ function start() {
         } else if (element.hasAttribute("role")) {
             element_getByrole(tagnam, element);
     
-        } else if (element.hasAttribute("class")) {
-            element_getByclass(tagnam, element);
-    
+        } else if (element.hasAttribute("class") && tagnam!="button" && tagnam!="a") {
+            element_getByclass(tagnam, element);   
+        }
+        else if(tagnam=="button" || tagnam=="a") {
+            element_getBytext(tagnam,element);
         }
     }
   
@@ -137,4 +146,10 @@ function start() {
         elemt.insertAdjacentHTML("afterend", el );
     }
   
-  
+  function element_getBytext(elementtype, elemt) {
+        itxt = elemt.innerText;
+        var xpat = "//" + elementtype + "[text()=\"" + itxt + "\"]";
+        console.log(xpat);
+          var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+        elemt.insertAdjacentHTML("afterend", el );
+    }
