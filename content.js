@@ -1,27 +1,22 @@
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.message === "start") {
-
             start();
         }
     }
 );
 
 function start() {
-
     var allElements = ["input", "select", "textarea", "button", "a","div"];
 
     for (j = 0; j < allElements.length; j++) {
         var tagnam = allElements[j];
         var elements = document.getElementsByTagName(tagnam);
         var len = elements.length;
-        console.log(len);
-        
+       
         if (tagnam == "input") {
             console.log("inside input");
             for (i = 0; i < len; i++) {
-                var nam;
-
                 if (elements[i].getAttribute("type") != "hidden") {
                     if (elements[i].getAttribute("style") == null) {
                         fetchXpaths(tagnam, elements[i]);
