@@ -11,10 +11,12 @@ This is a google chrome extension to generate the xpaths automatically for the p
 User has to just copy the xpath and use it in his automation script. Also for anyone who doesn't know how to write the xpaths, this extension will be very useful.
 
 ## How To Use:
-1. Download the chrome extension from the link
-2. Add it to your browser.
-3. Navigate to the webpage for which you need xpaths.
-4. Click on the extension icon.
-5. Click on Generate.
-6. Xpaths will get generated for each and every element.
-7. Simply copy the xpath from your page and paste in your automation script.
+1. Download the chrome extension from the link below
+    https://chrome.google.com/webstore/detail/automaticxpathgenerator/amcbnabgjffdhibpmgcnpnmjpfjliikh/related
+  
+3. Add it to your browser.
+4. Navigate to the webpage for which you need xpaths.
+5. Click on the extension icon.
+6. Click on Generate.
+7. Xpaths will get generated for each and every element.
+8. Simply copy the xpath from your page and paste in your automation script.
