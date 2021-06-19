@@ -1,6 +1,6 @@
 {
     "name" : "AutomaticXpathGenerator",
-    "version" : "1.0",
+    "version" : "1.2",
     "description" : "This will generate xpaths for elements on the webpage",
     "icons" : {
         "128" :"./icons/128_g.png",

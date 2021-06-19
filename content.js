@@ -87,56 +87,182 @@ function element_getById(elementtype, elemt) {
     id = elemt.getAttribute("id");
     var xpat = "//" + elementtype + "[@id=\"" + id + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByname(elementtype, elemt) {
     nam = elemt.getAttribute("name");
     var xpat = "//" + elementtype + "[@name=\"" + nam + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr</table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByformcontrolname(elementtype, elemt) {
     fnam = elemt.getAttribute("formcontrolname");
     var xpat = "//" + elementtype + "[@formcontrolname=\"" + fnam + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByvalue(elementtype, elemt) {
     val = elemt.getAttribute("value");
     var xpat = "//" + elementtype + "[@value=\"" + val + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByrole(elementtype, elemt) {
     rol = elemt.getAttribute("role");
     var xpat = "//" + elementtype + "[@role=\"" + rol + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByplaceholder(elementtype, elemt) {
     ph = elemt.getAttribute("placeholder");
     var xpat = "//" + elementtype + "[@placeholder=\"" + ph + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 function element_getByclass(elementtype, elemt) {
     cls = elemt.getAttribute("class");
     var xpat = "//" + elementtype + "[@class=\"" + cls + "\"]";
     console.log(xpat);
-    var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
+    let r = Math.random().toString(36).substring(7);
+    var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
     elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
 }
 
 
@@ -146,7 +272,30 @@ function element_getBytext(elementtype, elemt) {
     if(itxt!=""){
         var xpat = "//" + elementtype + "[text()=\"" + itxt + "\"]";
         console.log(xpat);
-        var el = "<table><tr><td style='border:1px dotted';color:red;><span style='color:green'>" + xpat + "</span></td></tr></table>";
-        elemt.insertAdjacentHTML("afterend", el);
+        let r = Math.random().toString(36).substring(7);
+        var el = "<div id="+r+"  style='border:none;resize:none;overflow:hidden;width: fit-content;color:green'>"+xpat+"</div>";
+    elemt.insertAdjacentHTML("afterend", el);
+    var div = document.getElementById(""+r+"");
+    if(div){
+    div.addEventListener("click", function(){       		
+            console.log("inside copy function"+r );		
+            var range = document.createRange();
+            range.selectNode(document.getElementById(r)); 
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range); 
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();
+            document.getElementById(r).style.backgroundColor='yellow';
+            console.log("end of copy func");      
+    });
+} else {
+    console.log("div is : "+div);
+}
+    
     }
 }
+
+
+
+
+    
