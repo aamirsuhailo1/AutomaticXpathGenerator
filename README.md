@@ -1,5 +1,8 @@
 ![AXG_sc2](https://user-images.githubusercontent.com/8610673/121768029-91a62c00-cb79-11eb-96eb-4ac4c843b74b.png)
 
+![AXG_copyx](https://user-images.githubusercontent.com/8610673/122640828-13203000-d11f-11eb-9753-831834abd0b4.jpg)
+
+
 ## Problem Statement:
 As an automation test engineer, while writing automated test cases we need xpaths. As of now, most of us are writing the xpaths manually in either in chrome dev tools or using other extensions like selectorshub.
 Assume that a page has some 200 elements to be used for automation. to write the xpath for each and every element is time consuming and it takes lot of efforts. 
@@ -8,7 +11,7 @@ To solve this huge problem I have developed this chrome extension.
 
 ## Solution : 
 This is a google chrome extension to generate the xpaths automatically for the page. This extension will generate the xpaths for each and every element on the page and displays it next to the corresponding web elements.
-User has to just copy the xpath and use it in his automation script. Also for anyone who doesn't know how to write the xpaths, this extension will be very useful.
+User has to just click on the xpath to copy and use it in his automation script. Copied xpath is highlighted in yellow background color. Also for anyone who doesn't know how to write the xpaths, this extension will be very useful.
 
 ## How To Use:
 1. Download the chrome extension from the link below
@@ -19,4 +22,4 @@ User has to just copy the xpath and use it in his automation script. Also for an
 5. Click on the extension icon.
 6. Click on Generate.
 7. Xpaths will get generated for each and every element.
-8. Simply copy the xpath from your page and paste in your automation script.
+8. Simply click on the xpath to copy from your page and paste it in your automation script.
